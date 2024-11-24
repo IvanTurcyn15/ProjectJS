@@ -1,0 +1,52 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css");
+ul {
+  margin: 0;
+  list-style: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  padding-left: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+input {
+  outline: none;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background-color: transparent;
+  color: inherit;
+  cursor: default;
+}
+
+input:focus, input:hover, input:not(:active:focus) {
+  outline: none;
+  border: none;
+  -webkit-box-shadow: 0.5px 0.5px 0.5px 0.5px;
+          box-shadow: 0.5px 0.5px 0.5px 0.5px;
+}
+
+.container {
+  width: 1090px;
+  margin: 0 auto;
+}/*# sourceMappingURL=main.css.map */
