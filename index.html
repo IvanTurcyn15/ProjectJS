@@ -1,12 +1,254 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>Lol</h1>
-    <p>kek</p>
+    <!-- Шапка -->
+    <header>
+        <div>
+            <svg>
+                <use href="#logo-icon"></use>
+            </svg>
+            <p>Coding<span>Magic</span></p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Інтерактиви</a></li>
+                <li><a href="#">Наша команда</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+        </nav>
+        <button>Перемкнути тему</button>
+        <div>
+            <p>Вітаємо, User!</p>
+        </div>
+    </header>
+
+    <main>
+        <h1>Популярні інтерактивні ігри</h1>
+        <section>
+            <!-- Перевірка на високосний рік -->
+            <h2>Перевір рік, у який ти народився</h2>
+            <form>
+                <label>Введіть рік народження:</label>
+                <input placeholder="Введіть рік">
+                <button>Перевірити</button>
+            </form>
+            <p>Результат:</p>
+
+            <!-- Вгадування числа -->
+            <h2>Вгадай число, яке загадує комп’ютер</h2>
+            <form>
+                <label>Введіть число:</label>
+                <input placeholder="Введіть число">
+                <button>Вгадати</button>
+            </form>
+            <p>Результат:</p>
+
+            <!-- Камінь, ножиці, папір -->
+            <h2>Камінь, ножиці, папір</h2>
+            <div>
+                <button>Камінь</button>
+                <button>Ножиці</button>
+                <button>Папір</button>
+            </div>
+            <p>Рахунок: Комп’ютер - 0, Ви - 0</p>
+
+            <!-- Калькулятор -->
+            <h2>Калькулятор</h2>
+            <form>
+                <input placeholder="Введіть число">
+                <button>+</button>
+                <button>-</button>
+                <button>*</button>
+                <button>/</button>
+                <input placeholder="Введіть число">
+                <button>Обчислити</button>
+                <p>Результат:</p>
+            </form>
+
+
+            <!-- Калькулятор часу -->
+            <h2>Калькулятор часу</h2>
+            <form>
+                <label>Введіть кількість годин:</label>
+                <input placeholder="Кількість годин">
+                <button>Перевести</button>
+            </form>
+            <p>Результат:</p>
+
+            <!-- Google динозавр -->
+            <h2>Google динозавр</h2>
+            <div>
+                <p>Натисніть на динозавра, щоб розпочати гру!</p>
+            </div>
+
+            <!-- Футбол -->
+            <h2>Футбол</h2>
+            <div>
+                <p>Натисніть на м’яч, щоб забити гол!</p>
+            </div>
+
+            <!-- Наша команда -->
+            <h2>Наша команда</h2>
+            <div>
+                <div>
+                    <img src="" alt="Фото студента">
+                    <p>Ім’я студента</p>
+                    <p>Інформація про роботу, яку виконав учасник</p>
+                </div>
+                <div>
+                    <img src="" alt="Фото студента">
+                    <p>Ім’я студента</p>
+                    <p>Інформація про роботу, яку виконав учасник</p>
+                </div>
+                <div>
+                    <img src="" alt="Фото студента">
+                    <p>Ім’я студента</p>
+                    <p>Інформація про роботу, яку виконав учасник</p>
+                </div>
+                <div>
+                    <img src="" alt="Фото студента">
+                    <p>Ім’я студента</p>
+                    <p>Інформація про роботу, яку виконав учасник</p>
+                </div>
+            </div>
+
+            <!-- Фільтрація вчених -->
+            <h2>Обери вченого/их</h2>
+            <div>
+                <div>
+                    <img src="" alt="Фото вченого">
+                </div>
+                <div>
+                    <img src="" alt="Фото вченого">
+                </div>
+                <div>
+                    <img src="" alt="Фото вченого">
+                </div>
+                <div>
+                    <img src="" alt="Фото вченого">
+                </div>
+                <div>
+                    <img src="" alt="Фото вченого">
+                </div>
+                <div>
+                    <img src="" alt="Фото вченого">
+                </div>
+                <div>
+                    <img src="" alt="Фото вченого">
+                </div>
+                <div>
+                    <img src="" alt="Фото вченого">
+                </div>
+                <div>
+                    <img src="" alt="Фото вченого">
+                </div>
+                <div>
+                    <img src="" alt="Фото вченого">
+                </div>
+                <div>
+                    <img src="" alt="Фото вченого">
+                </div>
+                <div>
+                    <img src="" alt="Фото вченого">
+                </div>
+            </div>
+            <div>
+                <button>Знайти вчителя, який народився в 19 ст.</button>
+                <button>Відсортувати вчителів за алфавітом</button>
+                <button>Відсортувати вчених за кількістю прожитих років</button>
+                <button>Знайти вченого, який народився найпізніше</button>
+                <button>Знайти рік народження Albert Einshtein</button>
+                <button>Знайти вчених, прізвища яких починаються на на літеру “С”</button>
+                <button>Видалити всіх вчених, ім’я яких починається на “А”</button>
+                <button>Знайти вченого, який прожив найдовше і вченого,який прожив найменше</button>
+                <button>Знайти вчених, в яких співпадають перші літери імені і прізвища</button>
+            </div>
+        </section>
+    </main>
+    <!-- Підвал -->
+    <footer>
+        <div>
+            <svg>
+                <use href="#logo-icon"></use>
+            </svg>
+            <p>Coding<span>Magic</span></p>
+        </div>
+        <ul>
+            <li> <a href="tel:+381234567890">Тел.: +38 (123) 456 78 90</a></li>
+            <li> <a href="mailto:codingmagic@gmail.com">E-mail: codingmagic@gmail.com</a></li>
+            <li> <a href="https://facebook.com/CodingMagic">Facebook: CodingMagic</a></li>
+            <li> <a href="https://instagram.com/CodingMagic">Instagram: CodingMagic</a></li>
+        </ul>
+        <form>
+            <label>Підписатись:</label>
+            <input type="email" placeholder="Ваша ел. адреса">
+            <button type="submit">Підписатись</button>
+        </form>
+    </footer>
 </body>
+
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ЦЦЦЦЦ.....Узбєкі спять -->
