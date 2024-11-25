@@ -7,6 +7,9 @@
     <title>Інтерактивні ігри</title>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -15,21 +18,40 @@
     <!-- Шапка -->
     <header class="header">
         <div class="container">
-            <div class="header-logo">
-                <svg class="logo-icon">
-                    <use href="#logo-icon"></use>
-                </svg>
-            </div>
-            <nav class="main-navigation">
-                <ul class="navigation-menu">
-                    <li class="navigation-item"><a href="#" class="navigation-link">Інтерактиви</a></li>
-                    <li class="navigation-item"><a href="#" class="navigation-link">Наша команда</a></li>
-                    <li class="navigation-item"><a href="#" class="navigation-link">Контакти</a></li>
-                </ul>
-            </nav>
-            <button class="theme-toggle-button">"Перетикнути тему"</button>
-            <div class="user-welcome">
-                <p class="welcome-text">Вітаємо, User!</p>
+            <div class="header-wrapper">
+                <div class="navigations"> 
+                    <div class="header-logo">
+                        <svg class="logo-icon" width="93" height="38.15">
+                            <use href="./images/symbol-defs.svg#logo-icon"></use>
+                        </svg>
+                    </div>
+                    <nav class="main-navigation">
+                        <ul class="navigation-menu">
+                            <li class="navigation-item">
+                                <button class="navigation-btn">
+                                    Інтерактив
+                                    <svg class="drop-icon" width="7" height="11">
+                                        <use href="./images/symbol-defs.svg#icon-drop"></use>
+                                    </svg>
+                                </button>
+                            </li>
+                            <li class="navigation-item"><a href="#" class="navigation-link">Наша команда</a></li>
+                            <li class="navigation-item"><a href="#" class="navigation-link">Контакти</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="settings">
+                    <button class="theme-toggle-button">
+                        <span class="theme-toggle-switch">
+                            <svg class="theme-toggle-icon" width="15.03" height="14.67">
+                                <use href="./images/symbol-defs.svg#icon-sun"></use>
+                            </svg>
+                        </span>
+                    </button>
+                 
+                        <p class="welcome-text">Вітаємо, User!</p>
+
+                </div>
             </div>
         </div>
     </header>
