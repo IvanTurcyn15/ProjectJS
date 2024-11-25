@@ -30,11 +30,3 @@ input {
     color: inherit; 
     cursor: default; 
 }
-  input:focus, input:hover ,input:not(:active:focus){
-    outline: none;
-    border: none;
-    box-shadow: 0.5px 0.5px 0.5px 0.5px;
-  }
-  
-  
-@import url('https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css');
