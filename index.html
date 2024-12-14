@@ -41,9 +41,15 @@
                     </nav>
                     <div class="dropdown close">
                         <ul class="dropdown-list">
-                            <li class="dropdown-item">Числовий</li>
-                            <li class="dropdown-item">Ігровий</li>
-                            <li class="dropdown-item">Ознайомчий</li>
+                            <li class="dropdown-item">
+                                <button class="dropdown-btn" data-category="numerical">Числовий</button>
+                            </li>
+                            <li class="dropdown-item">
+                                <button class="dropdown-btn" data-category="game">Ігровий</button>
+                            </li>
+                            <li class="dropdown-item">
+                                <button class="dropdown-btn" data-category="acquaintance">Ознайомчий</button>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -55,9 +61,7 @@
                             </svg>
                         </span>
                     </button>
-                 
-                        <p class="welcome-text">Вітаємо, User!</p>
-
+                    <p class="welcome-text">Вітаємо, User!</p>
                 </div>
             </div>
         </div>
@@ -70,7 +74,7 @@
 
             <section class="interactive-section">
                 <!-- Перевірка на високосний рік -->
-                <div class="year-block" data-category="numerical">
+                <div class="year-block block" data-category="numerical">
                     <h2 class="game-title">Перевір рік, у який ти народився</h2>
                     <form class="year-form">
                         <label class="year-label">Введіть рік народження:</label>
@@ -81,7 +85,7 @@
                 </div>
 
                 <!-- Вгадування числа -->
-                <div class="number-block" data-category="numerical">
+                <div class="number-block block" data-category="numerical">
                     <h2 class="game-title">Вгадай число, яке загадує комп’ютер</h2>
                     <form class="number-form">
                         <label class="number-label">Введіть число:</label>
@@ -92,7 +96,7 @@
                 </div>
 
                 <!-- Камінь, ножиці, папір -->
-                <div class="game-block" data-category="game">
+                <div class="game-block block" data-category="game">
                     <h2 class="game-title">Камінь, ножиці, папір</h2>
                     <div class="game-options">
                         <button class="option-button">Камінь</button>
@@ -103,7 +107,7 @@
                 </div>
 
                 <!-- Калькулятор -->
-                <div class="calculator-block" data-category="numerical">
+                <div class="calculator-block block" data-category="numerical">
                     <h2 class="game-title">Калькулятор</h2>
                     <form class="calculator-form">
                         <input class="calculator-input first" placeholder="Введіть число">
@@ -119,7 +123,7 @@
                 </div>
 
                 <!-- Калькулятор часу -->
-                <div class="time-block" data-category="numerical">
+                <div class="time-block block" data-category="numerical">
                     <h2 class="game-title">Калькулятор часу</h2>
                     <form class="time-form">
                         <label class="time-label">Введіть число:</label>
@@ -130,7 +134,7 @@
                 </div>
 
                 <!-- Google динозавр -->
-                <div class="dino-block" data-category="game">
+                <div class="dino-block block" data-category="game">
                     <h2 class="game-title">Google динозавр</h2>
                     <div class="dinosaur-game">
                         <p class="dinosaur-text">Натисніть на динозавра, щоб розпочати гру!</p>
@@ -138,7 +142,7 @@
                 </div>
 
                 <!-- Футбол -->
-                <div class="football-block" data-category="game">
+                <div class="football-block block" data-category="game">
                     <h2 class="game-title">Футбол</h2>
                     <div class="football-game">
                         <p class="football-text">Натисніть на м’яч, щоб забити гол!</p>
@@ -146,7 +150,7 @@
                 </div>
 
                 <!-- Три числа -->
-                <div class="three-numbers-block" data-category="numerical">
+                <div class="three-numbers-block block" data-category="numerical">
                     <h2 class="game-title">Введіть 3 числа</h2>
                     <div class="three-numbers-inputs">
                         <input type="text" class="three-numbers-input first-num" placeholder="Число 1">
@@ -158,7 +162,7 @@
 
                 <!-- Наша команда -->
 
-                <div class="team-block" data-category="acquaintance">
+                <div class="team-block block" data-category="acquaintance">
                     <h2 class="team-title">Наша команда</h2>
                     <div class="team-members">
                         <div class="team-member">
@@ -185,95 +189,95 @@
                 </div>
 
                 <!-- Фільтрація вчених -->
-                <div class="scientists-block" data-category="acquaintance">
-                <h2 class="scientists-title">Обери вченого/их</h2> 
-                <ul class="scientists-list"> 
-                    <li class="scientist-item"> 
-                        <p class="scientist-name"></p> 
-                        <p class="scientist-info"></p> 
-                    </li> 
-                    <li class="scientist-item"> 
-                        <p class="scientist-name"></p> 
-                        <p class="scientist-info"></p> 
-                    </li> 
-                    <li class="scientist-item"> 
-                        <p class="scientist-name"></p> 
-                        <p class="scientist-info"></p> 
-                    </li> 
-                    <li class="scientist-item"> 
-                        <p class="scientist-name"></p> 
-                        <p class="scientist-info"></p> 
-                    </li> 
-                    <li class="scientist-item"> 
-                        <p class="scientist-name"></p> 
-                        <p class="scientist-info"></p> 
-                    </li> 
-                    <li class="scientist-item"> 
-                        <p class="scientist-name"></p> 
-                        <p class="scientist-info"></p> 
-                    </li> 
-                    <li class="scientist-item"> 
-                        <p class="scientist-name"></p> 
-                        <p class="scientist-info"></p> 
-                    </li> 
-                    <li class="scientist-item"> 
-                        <p class="scientist-name"></p> 
-                        <p class="scientist-info"></p> 
-                    </li> 
-                    <li class="scientist-item"> 
-                        <p class="scientist-name"></p> 
-                        <p class="scientist-info"></p> 
-                    </li> 
-                    <li class="scientist-item"> 
-                        <p class="scientist-name"></p> 
-                        <p class="scientist-info"></p> 
-                    </li> 
-                    <li class="scientist-item"> 
-                        <p class="scientist-name"></p> 
-                        <p class="scientist-info"></p> 
-                    </li> 
-                    <li class="scientist-item"> 
-                        <p class="scientist-name"></p> 
-                        <p class="scientist-info"></p> 
-                    </li> 
-                </ul> 
-                <!-- Кнопки фільтрації --> 
-                <ul class="scientists-buttons"> 
-                    <div class="upper-buttons">
-                        <div class="left-half">
-                            <li class="scientist-button-item"> 
-                                <button class="scientist-button">Які вчені народилися в 19 ст.</button> 
-                            </li> 
-                            <li class="scientist-button-item"> 
-                                <button class="scientist-button">Відсортувати вчених за алфавітом</button> 
-                            </li> 
-                            <li class="scientist-button-item"> 
-                                <button class="scientist-button">Відсортувати вчених за кількістю прожитих років</button> 
-                            </li> 
-                            <li class="scientist-button-item"> 
-                                <button class="scientist-button">Знайти вченого, який народився найпізніше</button> 
-                            </li> 
+                <div class="scientists-block block" data-category="acquaintance">
+                    <h2 class="scientists-title">Обери вченого/их</h2> 
+                    <ul class="scientists-list"> 
+                        <li class="scientist-item"> 
+                            <p class="scientist-name"></p> 
+                            <p class="scientist-info"></p> 
+                        </li> 
+                        <li class="scientist-item"> 
+                            <p class="scientist-name"></p> 
+                            <p class="scientist-info"></p> 
+                        </li> 
+                        <li class="scientist-item"> 
+                            <p class="scientist-name"></p> 
+                            <p class="scientist-info"></p> 
+                        </li> 
+                        <li class="scientist-item"> 
+                            <p class="scientist-name"></p> 
+                            <p class="scientist-info"></p> 
+                        </li> 
+                        <li class="scientist-item"> 
+                            <p class="scientist-name"></p> 
+                            <p class="scientist-info"></p> 
+                        </li> 
+                        <li class="scientist-item"> 
+                            <p class="scientist-name"></p> 
+                            <p class="scientist-info"></p> 
+                        </li> 
+                        <li class="scientist-item"> 
+                            <p class="scientist-name"></p> 
+                            <p class="scientist-info"></p> 
+                        </li> 
+                        <li class="scientist-item"> 
+                            <p class="scientist-name"></p> 
+                            <p class="scientist-info"></p> 
+                        </li> 
+                        <li class="scientist-item"> 
+                            <p class="scientist-name"></p> 
+                            <p class="scientist-info"></p> 
+                        </li> 
+                        <li class="scientist-item"> 
+                            <p class="scientist-name"></p> 
+                            <p class="scientist-info"></p> 
+                        </li> 
+                        <li class="scientist-item"> 
+                            <p class="scientist-name"></p> 
+                            <p class="scientist-info"></p> 
+                        </li> 
+                        <li class="scientist-item"> 
+                            <p class="scientist-name"></p> 
+                            <p class="scientist-info"></p> 
+                        </li> 
+                    </ul> 
+                    <!-- Кнопки фільтрації --> 
+                    <ul class="scientists-buttons"> 
+                        <div class="upper-buttons">
+                            <div class="left-half">
+                                <li class="scientist-button-item"> 
+                                    <button class="scientist-button">Які вчені народилися в 19 ст.</button> 
+                                </li> 
+                                <li class="scientist-button-item"> 
+                                    <button class="scientist-button">Відсортувати вчених за алфавітом</button> 
+                                </li> 
+                                <li class="scientist-button-item"> 
+                                    <button class="scientist-button">Відсортувати вчених за кількістю прожитих років</button> 
+                                </li> 
+                                <li class="scientist-button-item"> 
+                                    <button class="scientist-button">Знайти вченого, який народився найпізніше</button> 
+                                </li> 
+                            </div>
+                            <div class="right-half">
+                                <li class="scientist-button-item"> 
+                                    <button class="scientist-button">Знайти рік народження Albert Einshtein</button> 
+                                </li> 
+                                <li class="scientist-button-item"> 
+                                    <button class="scientist-button">Знайти вчених, прізвища яких починаються на на літеру “С”</button> 
+                                </li> 
+                                <li class="scientist-button-item"> 
+                                    <button class="scientist-button">Видалити всіх вчених, ім’я яких починається на “А”</button> 
+                                </li> 
+                                <li class="scientist-button-item"> 
+                                    <button class="scientist-button">Знайти вченого, який прожив найдовше і вченого,  
+                                        який прожив найменше</button> 
+                                </li>
+                            </div>
                         </div>
-                        <div class="right-half">
-                            <li class="scientist-button-item"> 
-                                <button class="scientist-button">Знайти рік народження Albert Einshtein</button> 
-                            </li> 
-                            <li class="scientist-button-item"> 
-                                <button class="scientist-button">Знайти вчених, прізвища яких починаються на на літеру “С”</button> 
-                            </li> 
-                            <li class="scientist-button-item"> 
-                                <button class="scientist-button">Видалити всіх вчених, ім’я яких починається на “А”</button> 
-                            </li> 
-                            <li class="scientist-button-item"> 
-                                <button class="scientist-button">Знайти вченого, який прожив найдовше і вченого,  
-                                    який прожив найменше</button> 
-                            </li>
-                        </div>
-                    </div>
-                    <li class="scientist-button-item lower"> 
-                        <button class="scientist-button">Знайти вчених, в яких співпадають перші літери імені і прізвища</button> 
-                    </li> 
-                </ul>
+                        <li class="scientist-button-item lower"> 
+                            <button class="scientist-button">Знайти вчених, в яких співпадають перші літери імені і прізвища</button> 
+                        </li> 
+                    </ul>
                 </div>
             </section>
         </div>
@@ -306,5 +310,4 @@
     </footer>
     <script type="module" src="./js/main.js"></script>
 </body>
-
 </html>
