@@ -11,6 +11,7 @@
 .navigation {
     &s {
         display: flex;
+        position: relative;
         align-items: center;
         gap: 81px;
     
@@ -42,6 +43,7 @@
 }
 
 .theme-toggle-button {
+    position: relative;
     display: flex;
     width: 40px;
     height: 20px;
@@ -49,6 +51,7 @@
     background-color: rgba(122, 122, 122, 1);
 
     & > span {
+        position: absolute;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -57,5 +60,51 @@
         border-radius: 11px;
         border: 0.5px solid black;
         background-color: white;
+        transition: transform 0.2s, background-color 0.5s;
     }
+}
+
+.dark-mode-switch {
+    transform: translateX(19.5px);
+    background-color: black !important;
+    border: 0.5px solid white !important;
+}
+
+.dropdown {
+    position: absolute;
+    left: 140px;
+    top: 40px;
+    border: 1px solid black;
+    border-top: none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #fff;
+    width: 160px;
+    height: 105px;
+    transition-property: all;
+    transition-duration: 0.2s;
+    overflow: hidden;
+
+    &-item {
+        display: flex;
+        height: 35px;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.2s;
+
+        &:last-child {
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-bottom: 1px solid black;
+        }
+
+        &:hover {
+            background-color: rgba(241, 241, 241, 1);
+        }
+    }
+}
+
+.close {
+    visibility: hidden;
+    height: 0;
 }

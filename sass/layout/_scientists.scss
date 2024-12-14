@@ -1,0 +1,67 @@
+.scientists-title{ 
+    font-size: 16px; 
+    font-weight: 400; 
+    line-height: 19.5px; 
+    text-align: center; 
+    color: rgba(0, 0, 0, 1); 
+    margin: 36px 0; 
+} 
+ 
+.scientists-list{ 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    width: 580px; 
+    column-gap: 59px; 
+    row-gap: 36px; 
+    margin: 0 auto; 
+    margin-bottom: 36px; 
+} 
+ 
+.scientist-item{ 
+    width: 100px; 
+    height: 100px; 
+    border-radius: 20px; 
+    background-color: rgba(217, 217, 217, 1); 
+} 
+ 
+.upper-buttons { 
+    display: flex; 
+    justify-content: center; 
+    gap: 36px; 
+    margin-bottom: 20px;
+} 
+
+.left-half {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.right-half {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 20px;
+
+    & li:last-child button {
+        width: 368px;
+        text-align: left;
+    }
+}
+
+.scientist-button {
+    color: white;
+    background-color: black;
+    box-shadow: 3px 3px 0px 0px #00000040;
+    display: block; 
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.lower {
+    display: flex;
+    justify-content: center;
+}

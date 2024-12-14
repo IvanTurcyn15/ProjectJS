@@ -20,15 +20,15 @@
         <div class="container">
             <div class="header-wrapper">
                 <div class="navigations"> 
-                    <div class="header-logo">
+                    <a href="./index.html" class="header-logo">
                         <svg class="logo-icon" width="93" height="38.15">
                             <use href="./images/symbol-defs.svg#logo-icon"></use>
                         </svg>
-                    </div>
+                    </a>
                     <nav class="main-navigation">
                         <ul class="navigation-menu">
                             <li class="navigation-item">
-                                <button class="navigation-btn">
+                                <button class="navigation-btn open-dropdown">
                                     Інтерактив
                                     <svg class="drop-icon" width="7" height="11">
                                         <use href="./images/symbol-defs.svg#icon-drop"></use>
@@ -39,10 +39,17 @@
                             <li class="navigation-item"><a href="#" class="navigation-link">Контакти</a></li>
                         </ul>
                     </nav>
+                    <div class="dropdown close">
+                        <ul class="dropdown-list">
+                            <li class="dropdown-item">Числовий</li>
+                            <li class="dropdown-item">Ігровий</li>
+                            <li class="dropdown-item">Ознайомчий</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="settings">
                     <button class="theme-toggle-button">
-                        <span class="theme-toggle-switch">
+                        <span class="theme-toggle-switch light-mode-switch">
                             <svg class="theme-toggle-icon" width="15.03" height="14.67">
                                 <use href="./images/symbol-defs.svg#icon-sun"></use>
                             </svg>
@@ -63,29 +70,29 @@
 
             <section class="interactive-section">
                 <!-- Перевірка на високосний рік -->
-                <div class="game-block">
+                <div class="year-block" data-category="numerical">
                     <h2 class="game-title">Перевір рік, у який ти народився</h2>
-                    <form class="game-form">
-                        <label class="game-label">Введіть рік народження:</label>
-                        <input class="game-input" placeholder="Введіть рік">
-                        <button class="game-button">Перевірити</button>
+                    <form class="year-form">
+                        <label class="year-label">Введіть рік народження:</label>
+                        <input class="year-input" placeholder="Введіть рік">
+                        <button type="submit" class="year-button">Перевірити</button>
                     </form>
-                    <p class="game-result">Результат:</p>
+                    <p class="year-result">Результат:</p>
                 </div>
 
                 <!-- Вгадування числа -->
-                <div class="game-block">
+                <div class="number-block" data-category="numerical">
                     <h2 class="game-title">Вгадай число, яке загадує комп’ютер</h2>
-                    <form class="game-form">
-                        <label class="game-label">Введіть число:</label>
-                        <input class="game-input" placeholder="Введіть число">
-                        <button class="game-button">Вгадати</button>
+                    <form class="number-form">
+                        <label class="number-label">Введіть число:</label>
+                        <input class="number-input" placeholder="Введіть число">
+                        <button class="number-button">Вгадати</button>
                     </form>
-                    <p class="game-result">Результат:</p>
+                    <p class="number-result">Результат:</p>
                 </div>
 
                 <!-- Камінь, ножиці, папір -->
-                <div class="game-block">
+                <div class="game-block" data-category="game">
                     <h2 class="game-title">Камінь, ножиці, папір</h2>
                     <div class="game-options">
                         <button class="option-button">Камінь</button>
@@ -96,35 +103,34 @@
                 </div>
 
                 <!-- Калькулятор -->
-                <div class="game-block">
+                <div class="calculator-block" data-category="numerical">
                     <h2 class="game-title">Калькулятор</h2>
                     <form class="calculator-form">
-                        <input class="calculator-input" placeholder="Введіть число">
+                        <input class="calculator-input first" placeholder="Введіть число">
                         <div class="calculator-operations">
-                            <button class="operation-button">+</button>
-                            <button class="operation-button">-</button>
-                            <button class="operation-button">*</button>
-                            <button class="operation-button">/</button>
+                            <button type="submit" class="operation-button">+</button>
+                            <button type="submit" class="operation-button">-</button>
+                            <button type="submit" class="operation-button">*</button>
+                            <button type="submit" class="operation-button">/</button>
                         </div>
-                        <input class="calculator-input" placeholder="Введіть число">
-                        <button class="calculator-button">Обчислити</button>
+                        <input class="calculator-input second" placeholder="Введіть число">
                     </form>
                     <p class="calculator-result">Результат:</p>
                 </div>
 
                 <!-- Калькулятор часу -->
-                <div class="game-block">
+                <div class="time-block" data-category="numerical">
                     <h2 class="game-title">Калькулятор часу</h2>
                     <form class="time-form">
-                        <label class="time-label">Введіть кількість годин:</label>
-                        <input class="time-input" placeholder="Кількість годин">
+                        <label class="time-label">Введіть число:</label>
+                        <input class="time-input" placeholder="Введіть число">
                         <button class="time-button">Перевести</button>
                     </form>
                     <p class="time-result">Результат:</p>
                 </div>
 
                 <!-- Google динозавр -->
-                <div class="game-block">
+                <div class="dino-block" data-category="game">
                     <h2 class="game-title">Google динозавр</h2>
                     <div class="dinosaur-game">
                         <p class="dinosaur-text">Натисніть на динозавра, щоб розпочати гру!</p>
@@ -132,137 +138,143 @@
                 </div>
 
                 <!-- Футбол -->
-                <div class="game-block">
+                <div class="football-block" data-category="game">
                     <h2 class="game-title">Футбол</h2>
                     <div class="football-game">
                         <p class="football-text">Натисніть на м’яч, щоб забити гол!</p>
                     </div>
                 </div>
-            </section>
 
-            <!-- Три числа -->
-            <div class="game-block">
-                <h2 class="game-title">Введіть 3 числа</h2>
-                <div class="number-inputs">
-                    <input type="text" class="number-input" placeholder="Число 1">
-                    <input type="text" class="number-input" placeholder="Число 2">
-                    <input type="text" class="number-input" placeholder="Число 3">
+                <!-- Три числа -->
+                <div class="three-numbers-block" data-category="numerical">
+                    <h2 class="game-title">Введіть 3 числа</h2>
+                    <div class="three-numbers-inputs">
+                        <input type="text" class="three-numbers-input first-num" placeholder="Число 1">
+                        <input type="text" class="three-numbers-input second-num" placeholder="Число 2">
+                        <input type="text" class="three-numbers-input third-num" placeholder="Число 3">
+                    </div>
+                    <p class="three-numbers-result">Найбільше число, яке ви ввели - (число)</p>
                 </div>
-                <p class="number-result">Найбільше число, яке ви ввели - (число)</p>
-            </div>
 
-            <!-- Наша команда -->
+                <!-- Наша команда -->
 
-            <h2 class="team-title">Наша команда</h2>
-            <div class="team-members">
-                <div class="team-member">
-                    <img src="" alt="Фото студента" class="member-photo">
-                    <p class="member-name">Ім’я студента</p>
-                    <p class="member-info">Інформація про роботу, яку виконав учасник</p>
+                <div class="team-block" data-category="acquaintance">
+                    <h2 class="team-title">Наша команда</h2>
+                    <div class="team-members">
+                        <div class="team-member">
+                            <img src="" alt="Фото студента" class="member-photo">
+                            <p class="member-name">Ім’я студента</p>
+                            <p class="member-info">Інформація про роботу, яку виконав учасник</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="" alt="Фото студента" class="member-photo">
+                            <p class="member-name">Ім’я студента</p>
+                            <p class="member-info">Інформація про роботу, яку виконав учасник</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="" alt="Фото студента" class="member-photo">
+                            <p class="member-name">Ім’я студента</p>
+                            <p class="member-info">Інформація про роботу, яку виконав учасник</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="" alt="Фото студента" class="member-photo">
+                            <p class="member-name">Ім’я студента</p>
+                            <p class="member-info">Інформація про роботу, яку виконав учасник</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="team-member">
-                    <img src="" alt="Фото студента" class="member-photo">
-                    <p class="member-name">Ім’я студента</p>
-                    <p class="member-info">Інформація про роботу, яку виконав учасник</p>
-                </div>
-                <div class="team-member">
-                    <img src="" alt="Фото студента" class="member-photo">
-                    <p class="member-name">Ім’я студента</p>
-                    <p class="member-info">Інформація про роботу, яку виконав учасник</p>
-                </div>
-                <div class="team-member">
-                    <img src="" alt="Фото студента" class="member-photo">
-                    <p class="member-name">Ім’я студента</p>
-                    <p class="member-info">Інформація про роботу, яку виконав учасник</p>
-                </div>
-            </div>
 
-
-            <!-- Фільтрація вчених -->
-
-            <h2 class="scientists-title">Обери вченого/их</h2>
-            <ul class="scientists-list">
-                <li class="scientist-item">
-                    <p class="scientist-name">Ім’я вченого</p>
-                    <p class="scientist-info">Інформація про вченого</p>
-                </li>
-                <li class="scientist-item">
-                    <p class="scientist-name">Ім’я вченого</p>
-                    <p class="scientist-info">Інформація про вченого</p>
-                </li>
-                <li class="scientist-item">
-                    <p class="scientist-name">Ім’я вченого</p>
-                    <p class="scientist-info">Інформація про вченого</p>
-                </li>
-                <li class="scientist-item">
-                    <p class="scientist-name">Ім’я вченого</p>
-                    <p class="scientist-info">Інформація про вченого</p>
-                </li>
-                <li class="scientist-item">
-                    <p class="scientist-name">Ім’я вченого</p>
-                    <p class="scientist-info">Інформація про вченого</p>
-                </li>
-                <li class="scientist-item">
-                    <p class="scientist-name">Ім’я вченого</p>
-                    <p class="scientist-info">Інформація про вченого</p>
-                </li>
-                <li class="scientist-item">
-                    <p class="scientist-name">Ім’я вченого</p>
-                    <p class="scientist-info">Інформація про вченого</p>
-                </li>
-                <li class="scientist-item">
-                    <p class="scientist-name">Ім’я вченого</p>
-                    <p class="scientist-info">Інформація про вченого</p>
-                </li>
-                <li class="scientist-item">
-                    <p class="scientist-name">Ім’я вченого</p>
-                    <p class="scientist-info">Інформація про вченого</p>
-                </li>
-                <li class="scientist-item">
-                    <p class="scientist-name">Ім’я вченого</p>
-                    <p class="scientist-info">Інформація про вченого</p>
-                </li>
-                <li class="scientist-item">
-                    <p class="scientist-name">Ім’я вченого</p>
-                    <p class="scientist-info">Інформація про вченого</p>
-                </li>
-                <li class="scientist-item">
-                    <p class="scientist-name">Ім’я вченого</p>
-                    <p class="scientist-info">Інформація про вченого</p>
-                </li>
-            </ul>
-            <!-- Кнопки фільтрації -->
-            <ul class="scientists-buttons">
-                <li class="scientist-button-item">
-                    <button class="scientist-button">Знайти вчителя, який народився в 19 ст.</button>
-                </li>
-                <li class="scientist-button-item">
-                    <button class="scientist-button">Відсортувати вчителів за алфавітом</button>
-                </li>
-                <li class="scientist-button-item">
-                    <button class="scientist-button">Відсортувати вчених за кількістю прожитих років</button>
-                </li>
-                <li class="scientist-button-item">
-                    <button class="scientist-button">Знайти вченого, який народився найпізніше</button>
-                </li>
-                <li class="scientist-button-item">
-                    <button class="scientist-button">Знайти рік народження Albert Einshtein</button>
-                </li>
-                <li class="scientist-button-item">
-                    <button class="scientist-button">Знайти вчених, прізвища яких починаються на літеру “С”</button>
-                </li>
-                <li class="scientist-button-item">
-                    <button class="scientist-button">Видалити всіх вчених, ім’я яких починається на “А”</button>
-                </li>
-                <li class="scientist-button-item">
-                    <button class="scientist-button">Знайти вченого, який прожив найдовше і вченого, який прожив
-                        найменше</button>
-                </li>
-                <li class="scientist-button-item">
-                    <button class="scientist-button">Знайти вчених, в яких співпадають перші літери імені і
-                        прізвища</button>
-                </li>
-            </ul>
+                <!-- Фільтрація вчених -->
+                <div class="scientists-block" data-category="acquaintance">
+                <h2 class="scientists-title">Обери вченого/их</h2> 
+                <ul class="scientists-list"> 
+                    <li class="scientist-item"> 
+                        <p class="scientist-name"></p> 
+                        <p class="scientist-info"></p> 
+                    </li> 
+                    <li class="scientist-item"> 
+                        <p class="scientist-name"></p> 
+                        <p class="scientist-info"></p> 
+                    </li> 
+                    <li class="scientist-item"> 
+                        <p class="scientist-name"></p> 
+                        <p class="scientist-info"></p> 
+                    </li> 
+                    <li class="scientist-item"> 
+                        <p class="scientist-name"></p> 
+                        <p class="scientist-info"></p> 
+                    </li> 
+                    <li class="scientist-item"> 
+                        <p class="scientist-name"></p> 
+                        <p class="scientist-info"></p> 
+                    </li> 
+                    <li class="scientist-item"> 
+                        <p class="scientist-name"></p> 
+                        <p class="scientist-info"></p> 
+                    </li> 
+                    <li class="scientist-item"> 
+                        <p class="scientist-name"></p> 
+                        <p class="scientist-info"></p> 
+                    </li> 
+                    <li class="scientist-item"> 
+                        <p class="scientist-name"></p> 
+                        <p class="scientist-info"></p> 
+                    </li> 
+                    <li class="scientist-item"> 
+                        <p class="scientist-name"></p> 
+                        <p class="scientist-info"></p> 
+                    </li> 
+                    <li class="scientist-item"> 
+                        <p class="scientist-name"></p> 
+                        <p class="scientist-info"></p> 
+                    </li> 
+                    <li class="scientist-item"> 
+                        <p class="scientist-name"></p> 
+                        <p class="scientist-info"></p> 
+                    </li> 
+                    <li class="scientist-item"> 
+                        <p class="scientist-name"></p> 
+                        <p class="scientist-info"></p> 
+                    </li> 
+                </ul> 
+                <!-- Кнопки фільтрації --> 
+                <ul class="scientists-buttons"> 
+                    <div class="upper-buttons">
+                        <div class="left-half">
+                            <li class="scientist-button-item"> 
+                                <button class="scientist-button">Які вчені народилися в 19 ст.</button> 
+                            </li> 
+                            <li class="scientist-button-item"> 
+                                <button class="scientist-button">Відсортувати вчених за алфавітом</button> 
+                            </li> 
+                            <li class="scientist-button-item"> 
+                                <button class="scientist-button">Відсортувати вчених за кількістю прожитих років</button> 
+                            </li> 
+                            <li class="scientist-button-item"> 
+                                <button class="scientist-button">Знайти вченого, який народився найпізніше</button> 
+                            </li> 
+                        </div>
+                        <div class="right-half">
+                            <li class="scientist-button-item"> 
+                                <button class="scientist-button">Знайти рік народження Albert Einshtein</button> 
+                            </li> 
+                            <li class="scientist-button-item"> 
+                                <button class="scientist-button">Знайти вчених, прізвища яких починаються на на літеру “С”</button> 
+                            </li> 
+                            <li class="scientist-button-item"> 
+                                <button class="scientist-button">Видалити всіх вчених, ім’я яких починається на “А”</button> 
+                            </li> 
+                            <li class="scientist-button-item"> 
+                                <button class="scientist-button">Знайти вченого, який прожив найдовше і вченого,  
+                                    який прожив найменше</button> 
+                            </li>
+                        </div>
+                    </div>
+                    <li class="scientist-button-item lower"> 
+                        <button class="scientist-button">Знайти вчених, в яких співпадають перші літери імені і прізвища</button> 
+                    </li> 
+                </ul>
+                </div>
             </section>
         </div>
     </main>
@@ -292,6 +304,7 @@
             </form>
         </div>
     </footer>
+    <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>
